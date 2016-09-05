@@ -1,0 +1,17 @@
+body {
+	background-color: #333333;
+}
+li {
+    font-size: large;
+}
+
+div.panel-heading {
+   font-size: x-large; 
+}
+.olga {
+
+}
+.carpenter {
+	text-transform: uppercase;
+	font-weight: bold;
+}

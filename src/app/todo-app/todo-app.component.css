@@ -1,0 +1,58 @@
+body {
+	background-color: #333333;
+}
+h1 {
+	color: #E24D30;
+	font-size: 56px;
+	opacity: 0.7;
+	text-align: center;
+}
+.form-control {
+	background-color: #f5f5f5;
+	border: none;
+	box-shadow: none;
+	-webkit-box-shadow: none;
+}
+.navbar.navbar-inverse {
+	border-radius: 0;
+}
+.panel {
+	border-radius: 0;
+	box-shadow: 0 5px 50px rgba(0,0,0,1);
+}
+/*.panel-heading {
+	border-bottom: none;
+}*/
+.panel-body {
+	background-color: #f5f5f5;
+}
+/*.panel-footer {
+	border-top: none;
+}*/
+.todo-list {
+	list-style: none;
+	padding-left: 5px;
+}
+.todo-list li {
+	position: relative;
+	line-height: 3;
+}
+li.completed > div > label{
+	opacity: 0.5;
+	text-decoration: line-through;
+}
+/*.todo-list li .toggle {
+	width: 30px;
+	height: 30px;
+	text-align: center;
+
+}*/
+.glyph-btn {
+	cursor: pointer;
+	float: right;
+	color: #E24D30;
+	position: absolute;
+	right: 0;
+	top: 30%;
+	opacity: 0.7;
+}

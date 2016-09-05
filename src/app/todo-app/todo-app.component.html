@@ -1,0 +1,26 @@
+<div class="row">
+  <div class="col-xs-12 col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3">
+    <h1>To dos</h1>
+    <div class="panel panel-default todoapp">
+      <div class="panel-heading">
+        <input class="new-todo form-control input-lg" placeholder="What needs to be done?" autofocus="" [(ngModel)]="newTodo.title" (keyup.enter)="addTodo()">
+      </div>
+      <div class="panel-body" *ngIf="todos.length > 0">
+        <ul class="todo-list">
+          <li *ngFor='#todo of todos' [class.completed]="todo.complete">
+            <div class="view">
+              <input class="toggle" title="Mark complete" type="checkbox" (click)="toggleTodoComplete(todo)" [checked]="todo.complete">
+              <label>{{todo.title}}</label>
+              
+                <span title="Remove" class="glyphicon glyphicon-remove glyph-btn" aria-hidden="true" (click)="removeTodo(todo)"></span>
+              
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="panel-footer" *ngIf="todos.length > 0">
+        <span class="todo-count"><strong>{{todos.length}}</strong> {{todos.length == 1 ? 'item' : 'items'}} left</span>
+      </div>
+    </div>
+</div>
+</div>

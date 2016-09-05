@@ -9,10 +9,11 @@
   <script src="/ember-cli-live-reload.js" type="text/javascript"></script>
   {{/unless}}
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
-<body>
-  <app-root>Loading...</app-root>
+<body style="background-color:#333333;">
+  <roca-app>Loading...</roca-app>
   
     {{#each scripts.polyfills}}
     <script src="{{.}}"></script>
